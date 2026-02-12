@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,27 +16,32 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
-* Compute the midrange of an array.
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
+
+/**
+* Computes the midrange of an array.
 *
-* @module @stdlib/stats-array-midrange
+* @param x - input array
+* @returns midrange
 *
 * @example
-* var midrange = require( '@stdlib/stats-array-midrange' );
-*
 * var x = [ 1.0, -2.0, 2.0 ];
 *
 * var v = midrange( x );
 * // returns 0.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function midrange( x: InputArray ): number;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = midrange;
