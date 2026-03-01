@@ -50,7 +50,7 @@ The [**mid-range**][mid-range] is defined as the arithmetic mean of the maximum 
 ## Usage
 
 ```javascript
-import midrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-array-midrange@deno/mod.js';
+import midrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-array-midrange@v0.0.0-deno/mod.js';
 ```
 
 #### midrange( x )
@@ -91,7 +91,7 @@ The function has the following parameters:
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import midrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-array-midrange@deno/mod.js';
+import midrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-array-midrange@v0.0.0-deno/mod.js';
 
 var x = discreteUniform( 10, -50, 50, {
     'dtype': 'float64'
