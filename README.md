@@ -33,29 +33,47 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Calculate the [midrange][midrange] of an array.
+> Calculate the [mid-range][mid-range] of an array.
 
 <section class="intro">
 
-The [**midrange**][midrange] is defined as the arithmetic mean of the maximum and minimum values in a data set. The measure is the midpoint of the range and a measure of central tendency.
+The [**mid-range**][mid-range] is defined as the arithmetic mean of the maximum and minimum values in a data set. The measure is the midpoint of the range and a measure of central tendency.
 
 </section>
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-array-midrange
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import midrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-array-midrange@esm/index.mjs';
+var midrange = require( '@stdlib/stats-array-midrange' );
 ```
 
 #### midrange( x )
 
-Computes the [midrange][midrange] of an array.
+Computes the [mid-range][mid-range] of an array.
 
 ```javascript
 var x = [ 1.0, -2.0, 2.0 ];
@@ -89,14 +107,9 @@ The function has the following parameters:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import midrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-array-midrange@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var midrange = require( '@stdlib/stats-array-midrange' );
 
 var x = discreteUniform( 10, -50, 50, {
     'dtype': 'float64'
@@ -105,10 +118,6 @@ console.log( x );
 
 var v = midrange( x );
 console.log( v );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -132,7 +141,7 @@ console.log( v );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -195,9 +204,9 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-array-midrange/main/LICENSE
 
-[midrange]: https://en.wikipedia.org/wiki/Mid-range
+[mid-range]: https://en.wikipedia.org/wiki/Mid-range
 
-[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor/tree/esm
+[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor
 
 </section>
 
